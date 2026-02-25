@@ -5,10 +5,12 @@
 }
 
 :root {
-  --color-primary: #f04e8d;
   --color-text-dark: #343F52;
   --color-text-black: #000000;
   --color-text-light: #60697B;
+  --color-pink-light: #f857a6;
+  --color-pink-dark: #ef3f6e;
+  --color-primary: linear-gradient(135deg, var(--color-pink-light) 10%, var(--color-pink-dark) 100%);
 }
 
 body {
@@ -54,7 +56,7 @@ body {
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
+  background: var(--color-primary);
   color: #ffffff;
 }
 
@@ -83,7 +85,9 @@ body {
 }
 
 .header__link--active {
-  color: var(--color-primary);
+  background: var(--color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__auth {
@@ -113,7 +117,9 @@ body {
 }
 
 .hero__title--highlight {
-  color: var(--color-primary);
+  background: var(--color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero__description {
@@ -197,7 +203,6 @@ body {
   .hero__visual img {
     position: static;
     transform: none;
-    width: 70%;
     margin: 0 auto;
   }
 
