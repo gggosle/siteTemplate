@@ -21,11 +21,23 @@ body {
     margin: 0 auto;
 }
 
-.container {
+.hero, .header, .features {
     margin: 0 auto;
-    padding: 5% 5%;
+    padding: 0 5%;
     width: 100%;
     max-width: 1470px;
+}
+.hero  {
+    background-image: url("../resources/div.card.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.container {
+    margin: 0 auto;
+    padding: 5% 0;
+
 }
 
 .btn {
@@ -82,21 +94,12 @@ body {
     gap: 20px;
 }
 
-.hero {
-    margin: 0 auto;
-    width: 100%;
-    height: 80vh;
-}
-
 .hero__container {
-    border-radius: 20px;
+
     display: flex;
     align-items: center;
     gap: 50px;
-    background-image: url("../resources/div.card.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
     width: 100%;
 }
 
