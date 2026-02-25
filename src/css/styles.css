@@ -6,9 +6,9 @@
 
 :root {
     --color-primary: #f04e8d;
-    --color-text-dark: #2d2d3a;
-    --color-text-light: #6b6b7b;
-    --color-bg-hero: #f4f7ff;
+    --color-text-dark: #343F52;
+    --color-text-black: #000000;
+    --color-text-light: #60697B;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    font-size: 1.0625rem;
     color: var(--color-text-dark);
     line-height: 1.6;
     margin: 0 auto;
@@ -27,13 +28,15 @@ body {
     width: 100%;
     max-width: 1470px;
 }
-.hero  {
+
+.hero {
     background-image: url("../resources/hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
 }
+
 .container {
     margin: 0 auto;
     padding: 5% 0;
@@ -58,13 +61,6 @@ body {
     color: #ffffff;
 }
 
-.layout-wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -79,9 +75,14 @@ body {
 }
 
 .header__link {
-    text-decoration: none; /* Removes the underline */
+    text-decoration: none;
     color: var(--color-text-dark);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+
+.header__link--black {
+    color: var(--color-text-black);
 }
 
 .header__link--active {
@@ -95,11 +96,9 @@ body {
 }
 
 .hero__container {
-
     display: flex;
     align-items: center;
     gap: 50px;
-
     width: 100%;
 }
 
@@ -110,9 +109,10 @@ body {
 }
 
 .hero__title {
-    font-size: 3.5rem;
+    font-size: 2.87rem;
     line-height: 1.2;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .hero__title--highlight {
@@ -120,7 +120,7 @@ body {
 }
 
 .hero__description {
-    font-size: 1.1rem;
+    font-size: 1.4375rem;
     color: var(--color-text-light);
     margin-bottom: 30px;
     max-width: 450px;
@@ -142,14 +142,14 @@ body {
 
 .features__subtitle {
     color: var(--color-primary);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .features__title {
-    font-size: 2.2rem;
+    font-size: 2.375rem;
     max-width: 600px;
     margin: 10px auto 0 auto;
 }
@@ -162,17 +162,11 @@ body {
 }
 
 .features__item-title {
-    font-size: 1.2rem;
+    font-size: 1.375rem;
     margin: 15px 0 10px 0;
 }
 
 .features__item-text {
     color: var(--color-text-light);
-    font-size: 0.95rem;
     line-height: 1.6;
-}
-
-.features__icon img {
-    width: 40px;
-    height: 40px;
 }
