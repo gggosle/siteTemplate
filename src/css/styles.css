@@ -28,7 +28,7 @@ body {
     max-width: 1470px;
 }
 .hero  {
-    background-image: url("../resources/div.card.png");
+    background-image: url("../resources/hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
